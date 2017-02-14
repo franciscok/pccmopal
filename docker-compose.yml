@@ -1,4 +1,4 @@
-wordpress:
+zwordpress:
   image: wordpress
   links:
     - wordpress_db:mysql
@@ -19,3 +19,5 @@ phpmyadmin:
   environment:
     MYSQL_USERNAME: root
     MYSQL_ROOT_PASSWORD: root
+    PMA_HOST: wordpress_db
+
